@@ -1,0 +1,16 @@
+public class Principal extends Employee implements HeadEmployee, GradesViewing {
+
+    public Principal(int idNum, String lastName, String firstName, String midName, String contactNum, String homeAddress, String empPw) {
+        super(idNum, lastName, firstName, midName, contactNum, homeAddress, empPw);
+    }
+
+	public boolean viewGrades() {
+		// TODO - implement Principal.viewGrades
+		throw new UnsupportedOperationException();
+	}
+
+	public boolean approveGrade() {
+		// TODO - implement Principal.approveGrade
+		throw new UnsupportedOperationException();
+	}
+}
