@@ -1,0 +1,32 @@
+public class Faculty extends Employee implements GradesViewing {
+    
+    private String dept;
+    private Subject subjs;
+    
+        public Faculty(int idNum, String lastName, String firstName, String midName, String contactNum, String homeAddress, String empPw) {
+            super(idNum, lastName, firstName, midName, contactNum, homeAddress, empPw);
+        }
+        public Faculty(String x){
+            dept = x;
+        }
+        
+        public String getDept(){
+            return dept;
+        }
+        
+        public void setDept(String x){
+            dept = x;
+        }
+        
+	public boolean addGrade() {
+		// TODO - implement Faculty.addGrade
+		throw new UnsupportedOperationException();
+	}
+
+	public boolean viewGrades() {
+		// TODO - implement Faculty.viewGrades
+		throw new UnsupportedOperationException();
+	}
+
+	private Department department;
+}
