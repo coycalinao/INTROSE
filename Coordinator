@@ -1,0 +1,19 @@
+public class Coordinator extends Employee implements HeadEmployee, GradesViewing {
+    private String dept;
+    
+    public Coordinator(int idNum, String lastName, String firstName, String midName, String contactNum, String homeAddress, String empPw) {
+        super(idNum, lastName, firstName, midName, contactNum, homeAddress, empPw);
+    }
+
+	public boolean approveGrade() {
+		// TODO - implement Coordinator.approveGrade
+		throw new UnsupportedOperationException();
+	}
+
+	public boolean viewGrades() {
+		// TODO - implement Coordinator.viewGrades
+		throw new UnsupportedOperationException();
+	}
+
+	private Department department;
+}
