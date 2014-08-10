@@ -3,33 +3,36 @@ import java.util.HashMap;
 
 public class Department {
 
-	private ArrayList<Employee> EmployeeList;
-	private String departmentName;
-        private HashMap<String, ArrayList<Faculty>> deptEmpList;
+        private HashMap<String, ArrayList<Employee>> deptEmpList;
         
         public Department(){
             deptEmpList = new HashMap();
         }
         
-	public ArrayList<Faculty> getFacultyList(String key) {
+	public ArrayList<Employee> getFacultyList(String key) {
             if(key == "Elementary")
                 return deptEmpList.get("Elementary");
             else
                 return deptEmpList.get("High School");
 	}
         
-	public void setEmployeeList(ArrayList<Faculty> facultyList) {
-            ArrayList<Faculty> elemF = new ArrayList<>();
-            ArrayList<Faculty> hsF = new ArrayList<>();
+	public void setEmployeeList(ArrayList<Faculty> facultyList, ArrayList<Coordinator> coorList) {
+            ArrayList<Employee> elemE = new ArrayList<>();
+            ArrayList<Employee> hsE = new ArrayList<>();
             
             for(int i = 0; i < facultyList.size(); i++){
                if(facultyList.get(i).getDept().equals("Elementary"))
-                   elemF.add(facultyList.get(i));
+                   elemE.add(facultyList.get(i));
                else if(facultyList.get(i).getDept().equals("High School"))
-                   hsF.add(facultyList.get(i));
+                   hsE.add(facultyList.get(i));
             }
-            deptEmpList.put("Elementary", elemF);
-            deptEmpList.put("High School", hsF);
+            for(int i = 0; i < coorList.size(); i++){
+                if(coorList.get(i).getDept() == "Elementary")
+                    elemE.add(coorList.get(i));
+                else
+                    hsE.add(coorList.get(i));
+            }
+            deptEmpList.put("Elementary", elemE);
+            deptEmpList.put("High School", hsE);
 	}
-
 }
