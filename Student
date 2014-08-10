@@ -1,0 +1,53 @@
+
+import java.util.ArrayList;
+
+public class Student extends Person {
+
+	private int stAge;
+	private int gradeLvl;
+	private ArrayList<Grade> Grades;
+        private String stSection;
+        
+        public Student(int idNum, String lastName, String firstName, String midName, String contactNum, String homeAddress, int stAge, int gradeLvl) {
+		// TODO - implement Student.Student
+                super(idNum, lastName, firstName, midName, contactNum, homeAddress);
+		throw new UnsupportedOperationException();
+	}
+        
+        
+        
+        public String getSection(){
+            return stSection;
+        }
+        
+        public void setSection(String s){
+           this.stSection = s;
+        }
+        
+	public int getStAge() {
+		return this.stAge;
+	}
+
+	public void setStAge(int stAge) {
+		this.stAge = stAge;
+	}
+
+	public int getGradeLvl() {
+		return this.gradeLvl;
+	}
+
+	public void setGradeLvl(int gradeLvl) {
+		this.gradeLvl = gradeLvl;
+	}
+	
+        public ArrayList<Grade> getGrades() {
+		// TODO - implement Student.getGrades
+		throw new UnsupportedOperationException();
+	}
+
+	public void setGrades(ArrayList<Grade> Grades) {
+		// TODO - implement Student.setGrades
+		throw new UnsupportedOperationException();
+	}
+
+}
