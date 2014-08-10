@@ -1,0 +1,34 @@
+
+import java.util.ArrayList;
+
+public class Class {
+
+	private String sectName;
+	private ArrayList<Student> Students;
+	private int sectYearlvl;
+	private int schoolYear;
+
+	public String getSectName() {
+		return this.sectName;
+	}
+
+	public void setSectName(String sectName) {
+		this.sectName = sectName;
+	}
+
+	public int getSectYearlvl() {
+		return this.sectYearlvl;
+	}
+
+        public void setSectYearlvl(int sectYearlvl) {
+		this.sectYearlvl = sectYearlvl;
+	}
+
+	public int getSchoolYear() {
+		return this.schoolYear;
+	}
+
+	public void setSchoolYear(int schoolYear) {
+		this.schoolYear = schoolYear;
+	}
+}
