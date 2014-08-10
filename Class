@@ -4,10 +4,36 @@ import java.util.ArrayList;
 public class Class {
 
 	private String sectName;
-	private ArrayList<Student> Students;
-	private int sectYearlvl;
+	private ArrayList<Student> students;
+	private int sectYearLvl;
 	private int schoolYear;
-
+        private ArrayList<Subject> subjects;
+        String elemSubj[] = {"Filipino", "English", "Mathematics",
+                "Science", "Social Studies", "Christian Living", 
+                "Home Economics and Livelihood Education/Computer Education", "MAPEH"};
+        String hsSubj[] = {"Filipino", "English", "Mathematics", "Science Social Studies",
+                "Christian Living", "Technology and Home Economics", "MAPEH"};
+        Subject tempS = new Subject();
+        
+        public Class(String sName, int sectionLvl, int sY){
+            sectName = sName;
+            sectYearLvl = sectionLvl;
+            schoolYear = sY;
+            students = new ArrayList<Student>();
+            if(sectionLvl < 7){
+                for(int i = 0; i < elemSubj.length; i++){
+                     tempS.setSubjName(elemSubj[i]);
+                     subjects.add(tempS);
+                }
+            }
+            else{
+                for(int i = 0; i < hsSubj.length; i++){
+                    tempS.setSubjName(hsSubj[i]);
+                    subjects.add(tempS);
+                }
+            }
+        }
+        
 	public String getSectName() {
 		return this.sectName;
 	}
@@ -17,11 +43,11 @@ public class Class {
 	}
 
 	public int getSectYearlvl() {
-		return this.sectYearlvl;
+		return this.sectYearLvl;
 	}
 
         public void setSectYearlvl(int sectYearlvl) {
-		this.sectYearlvl = sectYearlvl;
+		this.sectYearLvl = sectYearlvl;
 	}
 
 	public int getSchoolYear() {
@@ -31,4 +57,8 @@ public class Class {
 	public void setSchoolYear(int schoolYear) {
 		this.schoolYear = schoolYear;
 	}
+        
+        public void addSubjects(Subject s){
+            subjects.add(s);
+        }
 }
