@@ -5,25 +5,31 @@ public class Department {
 
 	private ArrayList<Employee> EmployeeList;
 	private String departmentName;
-        private HashMap deptEmpList;
+        private HashMap<String, ArrayList<Faculty>> deptEmpList;
         
         public Department(){
             deptEmpList = new HashMap();
         }
         
-	public ArrayList<Employee> getEmployeeList() {
-            	// TODO - implement Department.getEmployeeList
-		throw new UnsupportedOperationException();
+	public ArrayList<Faculty> getFacultyList(String key) {
+            if(key == "Elementary")
+                return deptEmpList.get("Elementary");
+            else
+                return deptEmpList.get("High School");
 	}
         
 	public void setEmployeeList(ArrayList<Faculty> facultyList) {
+            ArrayList<Faculty> elemF = new ArrayList<>();
+            ArrayList<Faculty> hsF = new ArrayList<>();
+            
             for(int i = 0; i < facultyList.size(); i++){
-                if(facultyList.get(i).getDept().equals("Elementary"))
-                    deptEmpList.put("Elementary", facultyList.get(i));
-                
-                else if(facultyList.get(i).getDept().equals("High School"))
-                    deptEmpList.put("High School", facultyList.get(i));
+               if(facultyList.get(i).getDept().equals("Elementary"))
+                   elemF.add(facultyList.get(i));
+               else if(facultyList.get(i).getDept().equals("High School"))
+                   hsF.add(facultyList.get(i));
             }
+            deptEmpList.put("Elementary", elemF);
+            deptEmpList.put("High School", hsF);
 	}
 
 }
