@@ -1,0 +1,29 @@
+import java.util.ArrayList;
+
+public class Admin extends Employee {
+        
+        public Admin(int idNum, String lastName, String firstName, String midName, String contactNum, String homeAddress, String empPw) {
+            super(idNum, lastName, firstName, midName, contactNum, homeAddress, empPw);
+        }
+
+	public boolean addFaculty() {
+		// TODO - implement Admin.addFaculty
+		throw new UnsupportedOperationException();
+	}
+
+	public boolean addFacultyList() {
+		// TODO - implement Admin.addFacultyList
+		throw new UnsupportedOperationException();
+	}
+
+	public boolean addSection() {
+		// TODO - implement Admin.addSection
+		throw new UnsupportedOperationException();
+	}
+
+	public boolean addStudents(Student s) {
+            
+		// TODO - implement Admin.addStudents
+		throw new UnsupportedOperationException();
+	}
+}
