@@ -1,0 +1,28 @@
+import java.util.ArrayList;
+
+public class Subject {
+
+	private String subjName;
+        private ArrayList<Employee> possibleTeachers; 
+        
+	public Subject(String n){
+            subjName = n;
+            possibleTeachers = new ArrayList<Employee>();
+        }
+        
+        public String getSubjName() {
+		return this.subjName;
+	}
+
+	/**
+	 * 
+	 * @param subjName
+	 */
+	public void setSubjName(String subjName) {
+		this.subjName = subjName;
+	}
+        
+        public Employee getSubjTeacher(int n){
+            return possibleTeachers.get(n);
+        }
+}
