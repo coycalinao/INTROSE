@@ -1,0 +1,25 @@
+public abstract class Employee extends Person {
+
+	private String empPW;
+        private String empPosition;
+        
+	public String getEmpPW() {
+		return this.empPW;
+	}
+
+	public void setEmpPW(String empPW) {
+		this.empPW = empPW;
+                
+	}
+
+	public Employee(int idNum, String lastName, String firstName, String midName, String contactNum, String homeAddress, String empPw) {
+		// TODO - implement Employee.Employee
+                super(idNum, lastName, firstName, midName, contactNum, homeAddress);
+		throw new UnsupportedOperationException();
+                
+	}
+        public Employee(){
+            
+        }
+
+}
