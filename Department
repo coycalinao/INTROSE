@@ -1,0 +1,29 @@
+import java.util.ArrayList;
+import java.util.HashMap;
+
+public class Department {
+
+	private ArrayList<Employee> EmployeeList;
+	private String departmentName;
+        private HashMap deptEmpList;
+        
+        public Department(){
+            deptEmpList = new HashMap();
+        }
+        
+	public ArrayList<Employee> getEmployeeList() {
+            	// TODO - implement Department.getEmployeeList
+		throw new UnsupportedOperationException();
+	}
+        
+	public void setEmployeeList(ArrayList<Faculty> facultyList) {
+            for(int i = 0; i < facultyList.size(); i++){
+                if(facultyList.get(i).getDept().equals("Elementary"))
+                    deptEmpList.put("Elementary", facultyList.get(i));
+                
+                else if(facultyList.get(i).getDept().equals("High School"))
+                    deptEmpList.put("High School", facultyList.get(i));
+            }
+	}
+
+}
