@@ -5,10 +5,6 @@ import java.util.Calendar;
 import java.util.Objects;
 import javax.swing.DefaultComboBoxModel;
 import java.awt.event.ActionListener;
-import javax.swing.JButton;
-import javax.swing.JComboBox;
-import javax.swing.JLabel;
-import javax.swing.JPanel;
 import javax.swing.JRootPane;
 /*
  * To change this license header, choose License Headers in Project Properties.
@@ -148,7 +144,6 @@ public class xUIAdmin extends javax.swing.JFrame {
         addSectionButton = new javax.swing.JButton();
         assignFacultyButton = new javax.swing.JButton();
         assignStudentButton = new javax.swing.JButton();
-        editSectionButton = new javax.swing.JButton();
         assignSubjectButton = new javax.swing.JButton();
         editAssignSubjectButton = new javax.swing.JButton();
         jLabel11 = new javax.swing.JLabel();
@@ -162,7 +157,6 @@ public class xUIAdmin extends javax.swing.JFrame {
         jLabel13 = new javax.swing.JLabel();
         accountSettingsMenu = new javax.swing.JPanel();
         accountNameLabel = new javax.swing.JLabel();
-        Settings = new javax.swing.JButton();
         logoutButton = new javax.swing.JButton();
         jLabel8 = new javax.swing.JLabel();
         addStudentPanel = new javax.swing.JPanel();
@@ -249,8 +243,6 @@ public class xUIAdmin extends javax.swing.JFrame {
         gradeLevelCombox1 = new javax.swing.JComboBox();
         firstSectionLabel = new javax.swing.JLabel();
         firstSectionNameField = new javax.swing.JTextField();
-        invalidInputMessage28 = new javax.swing.JLabel();
-        invalidInputMessage30 = new javax.swing.JLabel();
         addButton2 = new javax.swing.JButton();
         bg5 = new javax.swing.JLabel();
         assignFacultyPanel = new javax.swing.JPanel();
@@ -259,11 +251,8 @@ public class xUIAdmin extends javax.swing.JFrame {
         gradeLevelComboBox2 = new javax.swing.JComboBox();
         sectionLabel3 = new javax.swing.JLabel();
         jComboBox5 = new javax.swing.JComboBox();
-        invalidInputMessage41 = new javax.swing.JLabel();
         Adviser = new javax.swing.JLabel();
         AdviserComboBox = new javax.swing.JComboBox();
-        invalidInputMessage31 = new javax.swing.JLabel();
-        invalidInputMessage33 = new javax.swing.JLabel();
         assignButton = new javax.swing.JButton();
         bg6 = new javax.swing.JLabel();
         assignStudentPanel = new javax.swing.JPanel();
@@ -272,11 +261,8 @@ public class xUIAdmin extends javax.swing.JFrame {
         gradeLevelComboBox3 = new javax.swing.JComboBox();
         SectionLabel = new javax.swing.JLabel();
         jComboBox2 = new javax.swing.JComboBox();
-        invalidInputMessage40 = new javax.swing.JLabel();
         StudentLabel = new javax.swing.JLabel();
         jComboBox1 = new javax.swing.JComboBox();
-        invalidInputMessage32 = new javax.swing.JLabel();
-        invalidInputMessage34 = new javax.swing.JLabel();
         assignButton1 = new javax.swing.JButton();
         bg7 = new javax.swing.JLabel();
         editSectionPanel = new javax.swing.JPanel();
@@ -355,15 +341,7 @@ public class xUIAdmin extends javax.swing.JFrame {
         understandingPercentageField = new javax.swing.JTextField();
         productPercentage = new javax.swing.JLabel();
         productPercentageField = new javax.swing.JTextField();
-        invalidInputMessage35 = new javax.swing.JLabel();
-        invalidInputMessage36 = new javax.swing.JLabel();
-        invalidInputMessage38 = new javax.swing.JLabel();
-        invalidInputMessage39 = new javax.swing.JLabel();
         saveButton1 = new javax.swing.JButton();
-        schoolYear = new javax.swing.JLabel();
-        toLabel = new javax.swing.JLabel();
-        jLabel15 = new javax.swing.JLabel();
-        schoolYearLabel = new javax.swing.JTextField();
         bg11 = new javax.swing.JLabel();
         accountSettingsPanel = new javax.swing.JPanel();
         tabLabel4 = new javax.swing.JLabel();
@@ -383,16 +361,12 @@ public class xUIAdmin extends javax.swing.JFrame {
         gradeLevelComboBox8 = new javax.swing.JComboBox();
         sectionLabel5 = new javax.swing.JLabel();
         jComboBox7 = new javax.swing.JComboBox();
-        invalidInputMessage51 = new javax.swing.JLabel();
         SubjectLabel1 = new javax.swing.JLabel();
         subjectComboBox3 = new javax.swing.JComboBox();
         subjectTeacherLabel1 = new javax.swing.JLabel();
         currentSubjectTeacherLabel = new javax.swing.JLabel();
         subjectTeacherLabel2 = new javax.swing.JLabel();
         subjectTeacherComboBox1 = new javax.swing.JComboBox();
-        invalidInputMessage52 = new javax.swing.JLabel();
-        invalidInputMessage53 = new javax.swing.JLabel();
-        invalidInputMessage54 = new javax.swing.JLabel();
         assignButton3 = new javax.swing.JButton();
         bg14 = new javax.swing.JLabel();
         assignSubjectPanel = new javax.swing.JPanel();
@@ -401,14 +375,10 @@ public class xUIAdmin extends javax.swing.JFrame {
         gradeLevelComboBox7 = new javax.swing.JComboBox();
         sectionLabel4 = new javax.swing.JLabel();
         jComboBox6 = new javax.swing.JComboBox();
-        invalidInputMessage45 = new javax.swing.JLabel();
         SubjectLabel = new javax.swing.JLabel();
         subjectComboBox2 = new javax.swing.JComboBox();
         subjectTeacherLabel = new javax.swing.JLabel();
         subjectTeacherComboBox = new javax.swing.JComboBox();
-        invalidInputMessage48 = new javax.swing.JLabel();
-        invalidInputMessage49 = new javax.swing.JLabel();
-        invalidInputMessage50 = new javax.swing.JLabel();
         assignButton2 = new javax.swing.JButton();
         bg13 = new javax.swing.JLabel();
         quarterSettingsPanel = new javax.swing.JPanel();
@@ -857,7 +827,6 @@ public class xUIAdmin extends javax.swing.JFrame {
         });
         getContentPane().add(classDataButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 200, 110, -1));
 
-        schoolYearSettings.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
         schoolYearSettings.setText("SY Settings");
         schoolYearSettings.setOpaque(false);
         schoolYearSettings.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -872,15 +841,14 @@ public class xUIAdmin extends javax.swing.JFrame {
         });
         getContentPane().add(schoolYearSettings, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 240, 110, -1));
 
-        accountSettingsButton.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-        accountSettingsButton.setText("Account Settings");
+        accountSettingsButton.setText("Acct Settings");
         accountSettingsButton.setOpaque(false);
         accountSettingsButton.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseEntered(java.awt.event.MouseEvent evt) {
-                accountSettingsButtonMouseEntered(evt);
-            }
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 accountSettingsButtonMouseClicked(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                accountSettingsButtonMouseEntered(evt);
             }
         });
         accountSettingsButton.addActionListener(new java.awt.event.ActionListener() {
@@ -995,7 +963,7 @@ public class xUIAdmin extends javax.swing.JFrame {
                 addSectionButtonActionPerformed(evt);
             }
         });
-        classDataMenu.add(addSectionButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 10, 110, -1));
+        classDataMenu.add(addSectionButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 10, 120, -1));
 
         assignFacultyButton.setText("assign Faculty");
         assignFacultyButton.setOpaque(false);
@@ -1009,7 +977,7 @@ public class xUIAdmin extends javax.swing.JFrame {
                 assignFacultyButtonActionPerformed(evt);
             }
         });
-        classDataMenu.add(assignFacultyButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 40, 110, -1));
+        classDataMenu.add(assignFacultyButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 40, 120, -1));
 
         assignStudentButton.setText("assign Student");
         assignStudentButton.setOpaque(false);
@@ -1023,24 +991,7 @@ public class xUIAdmin extends javax.swing.JFrame {
                 assignStudentButtonActionPerformed(evt);
             }
         });
-        classDataMenu.add(assignStudentButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 70, 110, -1));
-
-        editSectionButton.setText("edit Section");
-        editSectionButton.setOpaque(false);
-        editSectionButton.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseEntered(java.awt.event.MouseEvent evt) {
-                editSectionButtonMouseEntered(evt);
-            }
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                editSectionButtonMouseClicked(evt);
-            }
-        });
-        editSectionButton.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                editSectionButtonActionPerformed(evt);
-            }
-        });
-        classDataMenu.add(editSectionButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 100, 110, -1));
+        classDataMenu.add(assignStudentButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 70, 120, -1));
 
         assignSubjectButton.setText("assign Subject");
         assignSubjectButton.setOpaque(false);
@@ -1054,10 +1005,9 @@ public class xUIAdmin extends javax.swing.JFrame {
                 assignSubjectButtonActionPerformed(evt);
             }
         });
-        classDataMenu.add(assignSubjectButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 130, 110, -1));
+        classDataMenu.add(assignSubjectButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 100, 120, -1));
 
-        editAssignSubjectButton.setFont(new java.awt.Font("Arial", 0, 10)); // NOI18N
-        editAssignSubjectButton.setText("changed subject teacher");
+        editAssignSubjectButton.setText("Edit Subject");
         editAssignSubjectButton.setOpaque(false);
         editAssignSubjectButton.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -1069,12 +1019,12 @@ public class xUIAdmin extends javax.swing.JFrame {
                 editAssignSubjectButtonActionPerformed(evt);
             }
         });
-        classDataMenu.add(editAssignSubjectButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 160, 110, 20));
+        classDataMenu.add(editAssignSubjectButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 130, 120, 20));
 
         jLabel11.setForeground(new java.awt.Color(153, 0, 0));
         jLabel11.setIcon(new javax.swing.ImageIcon(getClass().getResource("/panel_menu.png"))); // NOI18N
         jLabel11.setText("jLabel1");
-        classDataMenu.add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 130, 190));
+        classDataMenu.add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 140, 170));
 
         mainPanel.add(classDataMenu, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 200, 130, 180));
 
@@ -1125,7 +1075,6 @@ public class xUIAdmin extends javax.swing.JFrame {
         });
         schoolyearSettingsMenu.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        currentSettings.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
         currentSettings.setText("Current Settings");
         currentSettings.setOpaque(false);
         currentSettings.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -1140,7 +1089,6 @@ public class xUIAdmin extends javax.swing.JFrame {
         });
         schoolyearSettingsMenu.add(currentSettings, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 30, 110, -1));
 
-        quarterSettingsButton.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
         quarterSettingsButton.setText("Quarter Settings");
         quarterSettingsButton.setOpaque(false);
         quarterSettingsButton.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -1181,20 +1129,6 @@ public class xUIAdmin extends javax.swing.JFrame {
         accountNameLabel.setText("Admin");
         accountSettingsMenu.add(accountNameLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 130, 20));
 
-        Settings.setText("Settings");
-        Settings.setOpaque(false);
-        Settings.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                SettingsMouseClicked(evt);
-            }
-        });
-        Settings.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                SettingsActionPerformed(evt);
-            }
-        });
-        accountSettingsMenu.add(Settings, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 20, 110, -1));
-
         logoutButton.setText("Logout");
         logoutButton.setOpaque(false);
         logoutButton.addActionListener(new java.awt.event.ActionListener() {
@@ -1202,7 +1136,7 @@ public class xUIAdmin extends javax.swing.JFrame {
                 logoutButtonActionPerformed(evt);
             }
         });
-        accountSettingsMenu.add(logoutButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 50, 110, -1));
+        accountSettingsMenu.add(logoutButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 40, 110, -1));
 
         jLabel8.setForeground(new java.awt.Color(153, 0, 0));
         jLabel8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/panel_menu.png"))); // NOI18N
@@ -1457,6 +1391,12 @@ public class xUIAdmin extends javax.swing.JFrame {
 
         bdayLabel.setText("Birthdate");
         editStudentPanel.add(bdayLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 230, -1, -1));
+
+        surnameTextField.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                surnameTextFieldActionPerformed(evt);
+            }
+        });
         editStudentPanel.add(surnameTextField, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 110, 160, -1));
 
         yLevelLabel.setText("Year Level");
@@ -1563,6 +1503,12 @@ public class xUIAdmin extends javax.swing.JFrame {
 
         jLabel21.setText("Department:");
         editFacultyPanel.add(jLabel21, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 260, -1, -1));
+
+        snTextField.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                snTextFieldActionPerformed(evt);
+            }
+        });
         editFacultyPanel.add(snTextField, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 110, 210, -1));
         editFacultyPanel.add(fnTextField, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 140, 210, -1));
         editFacultyPanel.add(mnTextField, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 170, 210, -1));
@@ -1616,14 +1562,6 @@ public class xUIAdmin extends javax.swing.JFrame {
         });
         addSectionPanel.add(firstSectionNameField, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 120, 210, -1));
 
-        invalidInputMessage28.setForeground(new java.awt.Color(255, 0, 0));
-        invalidInputMessage28.setText("*invalid input");
-        addSectionPanel.add(invalidInputMessage28, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 80, 110, 20));
-
-        invalidInputMessage30.setForeground(new java.awt.Color(255, 0, 0));
-        invalidInputMessage30.setText("*invalid input");
-        addSectionPanel.add(invalidInputMessage30, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 120, 110, 20));
-
         addButton2.setText("Add");
         addButton2.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -1675,10 +1613,6 @@ public class xUIAdmin extends javax.swing.JFrame {
         });
         assignFacultyPanel.add(jComboBox5, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 120, 210, -1));
 
-        invalidInputMessage41.setForeground(new java.awt.Color(255, 0, 0));
-        invalidInputMessage41.setText("*invalid input");
-        assignFacultyPanel.add(invalidInputMessage41, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 120, 110, 20));
-
         Adviser.setText("Adviser:");
         assignFacultyPanel.add(Adviser, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 150, -1, 20));
 
@@ -1689,14 +1623,6 @@ public class xUIAdmin extends javax.swing.JFrame {
             }
         });
         assignFacultyPanel.add(AdviserComboBox, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 150, 210, -1));
-
-        invalidInputMessage31.setForeground(new java.awt.Color(255, 0, 0));
-        invalidInputMessage31.setText("*invalid input");
-        assignFacultyPanel.add(invalidInputMessage31, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 80, 110, 20));
-
-        invalidInputMessage33.setForeground(new java.awt.Color(255, 0, 0));
-        invalidInputMessage33.setText("*invalid input");
-        assignFacultyPanel.add(invalidInputMessage33, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 150, 110, 20));
 
         assignButton.setText("Assign");
         assignButton.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -1749,10 +1675,6 @@ public class xUIAdmin extends javax.swing.JFrame {
         });
         assignStudentPanel.add(jComboBox2, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 130, 190, -1));
 
-        invalidInputMessage40.setForeground(new java.awt.Color(255, 0, 0));
-        invalidInputMessage40.setText("*invalid input");
-        assignStudentPanel.add(invalidInputMessage40, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 130, 70, 20));
-
         StudentLabel.setText("Student:");
         assignStudentPanel.add(StudentLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 160, 80, 20));
 
@@ -1763,14 +1685,6 @@ public class xUIAdmin extends javax.swing.JFrame {
             }
         });
         assignStudentPanel.add(jComboBox1, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 160, 190, -1));
-
-        invalidInputMessage32.setForeground(new java.awt.Color(255, 0, 0));
-        invalidInputMessage32.setText("*invalid input");
-        assignStudentPanel.add(invalidInputMessage32, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 160, 70, 20));
-
-        invalidInputMessage34.setForeground(new java.awt.Color(255, 0, 0));
-        invalidInputMessage34.setText("*invalid input");
-        assignStudentPanel.add(invalidInputMessage34, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 80, 110, 20));
 
         assignButton1.setText("Assign");
         assignButton1.setOpaque(false);
@@ -2137,22 +2051,6 @@ public class xUIAdmin extends javax.swing.JFrame {
         });
         currentSettingsPanel.add(productPercentageField, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 230, 160, -1));
 
-        invalidInputMessage35.setForeground(new java.awt.Color(255, 0, 0));
-        invalidInputMessage35.setText("*invalid input");
-        currentSettingsPanel.add(invalidInputMessage35, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 80, 110, 20));
-
-        invalidInputMessage36.setForeground(new java.awt.Color(255, 0, 0));
-        invalidInputMessage36.setText("*invalid input");
-        currentSettingsPanel.add(invalidInputMessage36, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 130, 110, 20));
-
-        invalidInputMessage38.setForeground(new java.awt.Color(255, 0, 0));
-        invalidInputMessage38.setText("*invalid input");
-        currentSettingsPanel.add(invalidInputMessage38, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 180, 110, 20));
-
-        invalidInputMessage39.setForeground(new java.awt.Color(255, 0, 0));
-        invalidInputMessage39.setText("*invalid input");
-        currentSettingsPanel.add(invalidInputMessage39, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 230, 100, 20));
-
         saveButton1.setText("Save");
         saveButton1.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -2165,17 +2063,6 @@ public class xUIAdmin extends javax.swing.JFrame {
             }
         });
         currentSettingsPanel.add(saveButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 340, 100, -1));
-
-        schoolYear.setText("School Year:");
-        currentSettingsPanel.add(schoolYear, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 280, 80, 30));
-
-        toLabel.setText("to");
-        currentSettingsPanel.add(toLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 280, 30, 20));
-
-        jLabel15.setText("schoolyear+1");
-        jLabel15.setToolTipText("");
-        currentSettingsPanel.add(jLabel15, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 280, -1, 20));
-        currentSettingsPanel.add(schoolYearLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 280, 60, -1));
 
         bg11.setIcon(new javax.swing.ImageIcon(getClass().getResource("/main_panelbg.png"))); // NOI18N
         bg11.setText("jLabel4");
@@ -2252,23 +2139,34 @@ public class xUIAdmin extends javax.swing.JFrame {
         gradeLevelLabel7.setText("Grade Level:");
         editAssignSubjectPanel.add(gradeLevelLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 80, 70, 20));
 
-        gradeLevelComboBox8.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+        gradeLevelComboBox8.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "1", "2", "3", "4", "5", "6", "7", "8", "9", "10" }));
+        gradeLevelComboBox8.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                gradeLevelComboBox8ActionPerformed(evt);
+            }
+        });
         editAssignSubjectPanel.add(gradeLevelComboBox8, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 80, 210, -1));
 
         sectionLabel5.setText("Section:");
         editAssignSubjectPanel.add(sectionLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 120, -1, 20));
 
         jComboBox7.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+        jComboBox7.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jComboBox7ActionPerformed(evt);
+            }
+        });
         editAssignSubjectPanel.add(jComboBox7, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 120, 210, -1));
-
-        invalidInputMessage51.setForeground(new java.awt.Color(255, 0, 0));
-        invalidInputMessage51.setText("*invalid input");
-        editAssignSubjectPanel.add(invalidInputMessage51, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 120, 110, 20));
 
         SubjectLabel1.setText("Subject:");
         editAssignSubjectPanel.add(SubjectLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 150, -1, 20));
 
         subjectComboBox3.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+        subjectComboBox3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                subjectComboBox3ActionPerformed(evt);
+            }
+        });
         editAssignSubjectPanel.add(subjectComboBox3, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 150, 210, -1));
 
         subjectTeacherLabel1.setText("Subject Teacher:");
@@ -2281,19 +2179,12 @@ public class xUIAdmin extends javax.swing.JFrame {
         editAssignSubjectPanel.add(subjectTeacherLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 210, -1, 20));
 
         subjectTeacherComboBox1.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+        subjectTeacherComboBox1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                subjectTeacherComboBox1ActionPerformed(evt);
+            }
+        });
         editAssignSubjectPanel.add(subjectTeacherComboBox1, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 210, 210, -1));
-
-        invalidInputMessage52.setForeground(new java.awt.Color(255, 0, 0));
-        invalidInputMessage52.setText("*invalid input");
-        editAssignSubjectPanel.add(invalidInputMessage52, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 80, 110, 20));
-
-        invalidInputMessage53.setForeground(new java.awt.Color(255, 0, 0));
-        invalidInputMessage53.setText("*invalid input");
-        editAssignSubjectPanel.add(invalidInputMessage53, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 150, 110, 20));
-
-        invalidInputMessage54.setForeground(new java.awt.Color(255, 0, 0));
-        invalidInputMessage54.setText("*invalid input");
-        editAssignSubjectPanel.add(invalidInputMessage54, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 210, 110, 20));
 
         assignButton3.setText("Assign");
         assignButton3.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -2346,10 +2237,6 @@ public class xUIAdmin extends javax.swing.JFrame {
         });
         assignSubjectPanel.add(jComboBox6, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 120, 210, -1));
 
-        invalidInputMessage45.setForeground(new java.awt.Color(255, 0, 0));
-        invalidInputMessage45.setText("*invalid input");
-        assignSubjectPanel.add(invalidInputMessage45, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 120, 110, 20));
-
         SubjectLabel.setText("Subject:");
         assignSubjectPanel.add(SubjectLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 150, -1, 20));
 
@@ -2371,18 +2258,6 @@ public class xUIAdmin extends javax.swing.JFrame {
             }
         });
         assignSubjectPanel.add(subjectTeacherComboBox, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 190, 210, -1));
-
-        invalidInputMessage48.setForeground(new java.awt.Color(255, 0, 0));
-        invalidInputMessage48.setText("*invalid input");
-        assignSubjectPanel.add(invalidInputMessage48, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 80, 110, 20));
-
-        invalidInputMessage49.setForeground(new java.awt.Color(255, 0, 0));
-        invalidInputMessage49.setText("*invalid input");
-        assignSubjectPanel.add(invalidInputMessage49, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 150, 110, 20));
-
-        invalidInputMessage50.setForeground(new java.awt.Color(255, 0, 0));
-        invalidInputMessage50.setText("*invalid input");
-        assignSubjectPanel.add(invalidInputMessage50, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 190, 110, 20));
 
         assignButton2.setText("Assign");
         assignButton2.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -2518,7 +2393,6 @@ public class xUIAdmin extends javax.swing.JFrame {
     public void addPDButtonListener(ActionListener l){
         personalDataButton.addActionListener(l);
     }
-    
     private void personalDataButtonActionPerformed(java.awt.event.ActionEvent evt) {                                                   
     }                                                  
     public void addSYSettingsButtonListener(ActionListener l){
@@ -2526,60 +2400,33 @@ public class xUIAdmin extends javax.swing.JFrame {
     }
     private void schoolYearSettingsActionPerformed(java.awt.event.ActionEvent evt) {                                                   
     }                                                  
-
     private void personalDataButtonMouseClicked(java.awt.event.MouseEvent evt) {                                                
     }                                               
-
-
-
     private void IDNumFieldActionPerformed(java.awt.event.ActionEvent evt) {                                           
-        // TODO add your handling code here:
     }                                          
-
     private void firstnameFieldActionPerformed(java.awt.event.ActionEvent evt) {                                               
-        // TODO add your handling code here:
     }                                              
-
     private void middlenameFieldActionPerformed(java.awt.event.ActionEvent evt) {                                                
-        // TODO add your handling code here:
     }                                               
-
     private void YesButtonActionPerformed(java.awt.event.ActionEvent evt) {                                          
-        // TODO add your handling code here:
     }                                         
-
     private void addButtonMouseClicked(java.awt.event.MouseEvent evt) {                                       
-            //addStudentDialogBox.setVisible(true);
-            
     }                                      
-
     private void addStudentButtonMouseClicked(java.awt.event.MouseEvent evt) {                                              
     }                                             
-
     private void IDNumField1ActionPerformed(java.awt.event.ActionEvent evt) {                                            
-        // TODO add your handling code here:
     }                                           
-
     private void firstnameField1ActionPerformed(java.awt.event.ActionEvent evt) {                                                
-        // TODO add your handling code here:
     }                                               
-
     private void middlenameField1ActionPerformed(java.awt.event.ActionEvent evt) {                                                 
-        // TODO add your handling code here:
     }                                                
-
     private void addButton1MouseClicked(java.awt.event.MouseEvent evt) {                                        
-        addFacultyDialogBox.setVisible(true);
     }                                       
-
     private void NoButton1ActionPerformed(java.awt.event.ActionEvent evt) {                                          
-        // TODO add your handling code here:
     }                                         
-
     public void addAddButton1Listener(ActionListener l){
         addButton1.addActionListener(l);
     }
-
     public String getEmployeeID(){
         return IDNumField1.getText();
     }
@@ -2604,174 +2451,115 @@ public class xUIAdmin extends javax.swing.JFrame {
     public String getEmployeeDepartment(){
         return departmentComboBox.getSelectedItem().toString();
     }
-
     private void addButton1ActionPerformed(java.awt.event.ActionEvent evt) {                                           
     }                                          
-
     private void addFacultyButtonMouseClicked(java.awt.event.MouseEvent evt) {                                              
     }                                             
-
     private void saveChangesbuttonMouseClicked(java.awt.event.MouseEvent evt) {                                               
-      
     }                                              
-
     private void NoButton2ActionPerformed(java.awt.event.ActionEvent evt) {                                          
     }                                         
-
     private void editStudentButtonMouseClicked(java.awt.event.MouseEvent evt) {                                               
     }                                              
-
     private void saveChangesbutton1MouseClicked(java.awt.event.MouseEvent evt) {                                                
     }                                               
-
     private void NoButton3ActionPerformed(java.awt.event.ActionEvent evt) {                                          
     }                                         
-
     private void editFacultyButtonMouseClicked(java.awt.event.MouseEvent evt) {                                               
     }                                              
-
     private void editFacultyButtonMouseEntered(java.awt.event.MouseEvent evt) {                                               
     }                                              
-
     private void personalDataMenuMouseClicked(java.awt.event.MouseEvent evt) {                                              
     }                                             
-
     private void accountSettingsMenuMouseClicked(java.awt.event.MouseEvent evt) {                                                 
     }                                                
-
     private void accountSettingsButtonMouseClicked(java.awt.event.MouseEvent evt) {                                                   
     }                                                  
-
     private void accountSettingsButtonMouseEntered(java.awt.event.MouseEvent evt) {                                                   
     }                                                  
-
     private void updateAccountButtonMouseClicked(java.awt.event.MouseEvent evt) {                                                 
     }                                                
-
     private void NoButton4ActionPerformed(java.awt.event.ActionEvent evt) {                                          
     }                                         
-
-    private void SettingsMouseClicked(java.awt.event.MouseEvent evt) {                                      
-    }                                     
-
     private void newPasswordFieldActionPerformed(java.awt.event.ActionEvent evt) {                                                 
     }                                                
-
     private void classDataMenuMouseClicked(java.awt.event.MouseEvent evt) {                                           
     }                                          
-
     private void classDataButtonMouseClicked(java.awt.event.MouseEvent evt) {                                             
     }                                            
-
     private void addButton2MouseClicked(java.awt.event.MouseEvent evt) {                                        
     }                                       
-
     private void YesButton5ActionPerformed(java.awt.event.ActionEvent evt) {                                           
     }                                          
-
     private void assignButtonMouseClicked(java.awt.event.MouseEvent evt) {                                          
     }                                         
-
     private void YesButton6ActionPerformed(java.awt.event.ActionEvent evt) {                                           
     }                                          
-
     private void assignButton1MouseClicked(java.awt.event.MouseEvent evt) {                                           
     }                                          
-
     private void YesButton7ActionPerformed(java.awt.event.ActionEvent evt) {                                           
     }                                          
-
     private void DoneButton1MouseClicked(java.awt.event.MouseEvent evt) {                                         
     }                                        
-
     private void YesButton8ActionPerformed(java.awt.event.ActionEvent evt) {                                           
     }                                          
-
     private void viewGradesButtonMouseClicked(java.awt.event.MouseEvent evt) {                                              
     }                                             
-
     private void changeGradesButtonMouseClicked(java.awt.event.MouseEvent evt) {                                                
     }                                               
-
     private void gradesDataMenuMouseClicked(java.awt.event.MouseEvent evt) {                                            
     }                                           
-
     private void viewButtonMouseClicked(java.awt.event.MouseEvent evt) {                                        
     }                                       
-
     private void viewButton1MouseClicked(java.awt.event.MouseEvent evt) {                                         
     }                                        
-
     private void YesButton9ActionPerformed(java.awt.event.ActionEvent evt) {                                           
     }                                          
-
     private void saveButtonMouseClicked(java.awt.event.MouseEvent evt) {                                        
     }                                       
-
     private void YesButton10ActionPerformed(java.awt.event.ActionEvent evt) {                                            
     }                                           
-
     private void NoButtonMouseClicked(java.awt.event.MouseEvent evt) {                                      
     }                                     
-
     private void NoButton1MouseClicked(java.awt.event.MouseEvent evt) {                                       
     }                                      
-
     private void NoButton2MouseClicked(java.awt.event.MouseEvent evt) {                                       
     }                                      
-
     private void NoButton3MouseClicked(java.awt.event.MouseEvent evt) {                                       
     }                                      
-
     private void NoButton4MouseClicked(java.awt.event.MouseEvent evt) {                                       
     }                                      
-
     private void NoButton5MouseClicked(java.awt.event.MouseEvent evt) {                                       
     }                                      
-
     private void NoButton6MouseClicked(java.awt.event.MouseEvent evt) {                                       
     }                                      
-
     private void NoButton7MouseClicked(java.awt.event.MouseEvent evt) {                                       
     }                                      
-
     private void NoButton8MouseClicked(java.awt.event.MouseEvent evt) {                                       
     }                                      
-
     private void NoButton9MouseClicked(java.awt.event.MouseEvent evt) {                                       
     }                                      
-
     private void NoButton10MouseClicked(java.awt.event.MouseEvent evt) {                                        
     }                                       
-
     private void knowledgePercentageFieldActionPerformed(java.awt.event.ActionEvent evt) {                                                         
     }                                                        
-
     private void understandingPercentageFieldActionPerformed(java.awt.event.ActionEvent evt) {                                                             
     }                                                            
-
     private void productPercentageFieldActionPerformed(java.awt.event.ActionEvent evt) {                                                       
     }                                                      
-
     private void saveButton1MouseClicked(java.awt.event.MouseEvent evt) {                                         
     }                                        
-
     private void processPercentageLabelActionPerformed(java.awt.event.ActionEvent evt) {                                                       
     }                                                      
-
     private void YesButton11ActionPerformed(java.awt.event.ActionEvent evt) {                                            
     }                                           
-
     private void NoButton11MouseClicked(java.awt.event.MouseEvent evt) {                                        
     }                                       
-
     private void schoolYearSettingsMouseClicked(java.awt.event.MouseEvent evt) {                                                
     }                                               
-
     public void addAddButtonListener(ActionListener l){
         addButton.addActionListener(l);
     }
-
     public String getStudentID(){
         return IDNumField.getText();
     }
@@ -2793,97 +2581,71 @@ public class xUIAdmin extends javax.swing.JFrame {
     public String getStudentDOB(){
         return studentBirthMonthComboBox.getSelectedItem().toString() +"-"+studentBirthDateComboBox.getSelectedItem().toString() +"-" +studentBirthYearComboBox.getSelectedItem().toString();
     }
-
     private void addButtonActionPerformed(java.awt.event.ActionEvent evt) {                                          
     }                                         
-
     private void SearchActionPerformed(java.awt.event.ActionEvent evt) {                                       
     }                                      
-
     public void addAddButton2Listener(ActionListener l){
         addButton2.addActionListener(l);
     }
-
     public String getSectionName(){
         return firstSectionNameField.getText();
     }
-
     public String getSectionGradeLevel(){
         return gradeLevelCombox1.getSelectedItem().toString();
     }
-
     private void addButton2ActionPerformed(java.awt.event.ActionEvent evt) {                                           
     }                                          
-
     private void gradeLevelCombox1ActionPerformed(java.awt.event.ActionEvent evt) {                                                  
     }                                                 
-    
     public void setSectionComboBoxF(DefaultComboBoxModel x){
         jComboBox5.setModel(x);
     }
-    
     private void jComboBox5ActionPerformed(java.awt.event.ActionEvent evt) {                                           
     }                                          
-
     public void setAdviserComboBoxF(DefaultComboBoxModel x){
         AdviserComboBox.setModel(x);
     }
     private void AdviserComboBoxActionPerformed(java.awt.event.ActionEvent evt) {                                                
-     
     }                                               
-
     private void studentBirthMonthComboBoxActionPerformed(java.awt.event.ActionEvent evt) {                                                          
     }                                                         
-
     private void studentBirthDateComboBoxActionPerformed(java.awt.event.ActionEvent evt) {                                                         
     }                                                        
-
     private void studentBirthYearComboBoxActionPerformed(java.awt.event.ActionEvent evt) {                                                         
     }                                                        
-
     private void viewButtonActionPerformed(java.awt.event.ActionEvent evt) {                                           
     }                                          
-
     private void studentGenderComboBoxActionPerformed(java.awt.event.ActionEvent evt) {                                                      
     }                                                     
-
     private void facultyGenderComboBoxActionPerformed(java.awt.event.ActionEvent evt) {                                                      
     }                                                     
-    
     public void addFacultyPositionComboBoxListener(ActionListener l){
         facultyPositionComboBox.addActionListener(l);
     }
-    
     public String getFacultyPosition(){
         return facultyPositionComboBox.getSelectedItem().toString();
     }
-    
-    public JLabel getDeptLabel(){
-        return departmentLabel;
+    public void setDeptLabel(boolean x){
+        departmentLabel.setVisible(x);
     }
-    public JComboBox getDeptCombox(){
-        return departmentComboBox;
+    public void setDeptCombox(boolean x){
+        departmentComboBox.setVisible(x);
     }
     private void facultyPositionComboBoxActionPerformed(java.awt.event.ActionEvent evt) {                                                        
-       
     }                                                       
-
     private void assignButton3MouseClicked(java.awt.event.MouseEvent evt) {                                           
-        // TODO add your handling code here:
     }                                          
-
+    public void addAssignButton3Listener(ActionListener l){
+        assignButton3.addActionListener(l);
+    }
     private void assignButton3ActionPerformed(java.awt.event.ActionEvent evt) {                                              
-        // TODO add your handling code here:
     }                                             
-
     private void assignButton2MouseClicked(java.awt.event.MouseEvent evt) {                                           
-        // TODO add your handling code here:
     }                                          
-
     public void addAssignButton2Listener(ActionListener l ){
         assignButton2.addActionListener(l);
     }
-
     public String getSectionGradeLevelT(){
         return gradeLevelComboBox7.getSelectedItem().toString();
     }
@@ -2898,21 +2660,14 @@ public class xUIAdmin extends javax.swing.JFrame {
     }
     private void assignButton2ActionPerformed(java.awt.event.ActionEvent evt) {                                              
     }                                             
-
     private void saveButton2MouseClicked(java.awt.event.MouseEvent evt) {                                         
-        // TODO add your handling code here:
     }                                        
-
     private void saveButton2ActionPerformed(java.awt.event.ActionEvent evt) {                                            
-        // TODO add your handling code here:
     }                                           
-
     private void addSectionButtonMouseClicked(java.awt.event.MouseEvent evt) {                                              
     }                                             
-
     private void assignFacultyButtonMouseClicked(java.awt.event.MouseEvent evt) {                                                 
     }                                                
-
     private void assignStudentButtonMouseClicked(java.awt.event.MouseEvent evt) {                                                 
     }                                                
     public void addAssignStudentButtonListener(ActionListener l){
@@ -2920,25 +2675,12 @@ public class xUIAdmin extends javax.swing.JFrame {
     }
     private void assignStudentButtonActionPerformed(java.awt.event.ActionEvent evt) {                                                    
     }                                                   
-
-    private void editSectionButtonMouseClicked(java.awt.event.MouseEvent evt) {                                               
-    }                                              
-
-    private void editSectionButtonMouseEntered(java.awt.event.MouseEvent evt) {                                               
-        // TODO add your handling code here:
-    }                                              
-
     private void assignSubjectButtonMouseClicked(java.awt.event.MouseEvent evt) {                                                 
     }                                                
-
     private void editAssignSubjectButtonMouseClicked(java.awt.event.MouseEvent evt) {                                                     
-        // TODO add your handling code here:
     }                                                    
-
     private void schoolyearSettingsMenuMouseClicked(java.awt.event.MouseEvent evt) {                                                    
-        // TODO add your handling code here:
     }                                                   
-
     private void currentSettingsMouseClicked(java.awt.event.MouseEvent evt) {                                             
     }                                            
     public void addCurrentSettingsButtonListener(ActionListener l ){
@@ -2946,42 +2688,27 @@ public class xUIAdmin extends javax.swing.JFrame {
     }
     private void currentSettingsActionPerformed(java.awt.event.ActionEvent evt) {                                                
     }                                               
-
     private void quarterSettingsButtonMouseClicked(java.awt.event.MouseEvent evt) {                                                   
-        // TODO add your handling code here:
     }                                                  
-  
     public void addEditAssignSubjectButtonListener(ActionListener l){
         editAssignSubjectButton.addActionListener(l);
     }
-    
-    public JPanel getEditSubjTeacherPanel(){
-        return editAssignSubjectPanel;
-    }
-
     private void editAssignSubjectButtonActionPerformed(java.awt.event.ActionEvent evt) {                                                        
-
     }                                                       
-
     public void addAssignButtonListener(ActionListener l){
         assignButton.addActionListener(l);
     }
-
     public String getSectionGradeLevelF(){
         return gradeLevelComboBox2.getSelectedItem().toString();
     }
-
     public String getSectionName1F(){
         return jComboBox5.getSelectedItem().toString();
     }
-
     public String getSectionAdviserIDF(){
         return AdviserComboBox.getSelectedItem().toString();
     }
-
     private void assignButtonActionPerformed(java.awt.event.ActionEvent evt) {                                             
     }                                            
-    
     public void setSectionComboBoxS(DefaultComboBoxModel x){
         jComboBox2.setModel(x);
     }
@@ -2989,15 +2716,10 @@ public class xUIAdmin extends javax.swing.JFrame {
     public void setStudentComboBoxS(DefaultComboBoxModel x){
         jComboBox1.setModel(x);
     }
-    
     private void jComboBox2ActionPerformed(java.awt.event.ActionEvent evt) {                                           
-
     }                                          
-
     private void jComboBox1ActionPerformed(java.awt.event.ActionEvent evt) {                                           
-
     }                                          
-
     public void addAssignButton1Listener(ActionListener l){
         assignButton1.addActionListener(l);
     }
@@ -3012,26 +2734,23 @@ public class xUIAdmin extends javax.swing.JFrame {
     }
     private void assignButton1ActionPerformed(java.awt.event.ActionEvent evt) {                                              
     }                                             
-
     public void addSaveButton1ActionListener(ActionListener l){
         saveButton1.addActionListener(l);
     }
-    public int getKnowledgePercentage(){
-        return Integer.parseInt(knowledgePercentageField.getText());
+    public String getKnowledgePercentage(){
+        return knowledgePercentageField.getText();
     }
-    public int getProcessPercentage(){
-        return Integer.parseInt(processPercentageLabel.getText());
+    public String getProcessPercentage(){
+        return processPercentageLabel.getText();
     }
-    public int getUnderstandingPercentage(){
-        return Integer.parseInt(understandingPercentageField.getText());
+    public String getUnderstandingPercentage(){
+        return understandingPercentageField.getText();
     }
-    public int getProductPercentage(){
-        return Integer.parseInt(productPercentageField.getText());
+    public String getProductPercentage(){
+        return productPercentageField.getText();
     }
     private void saveButton1ActionPerformed(java.awt.event.ActionEvent evt) {                                            
-
     }                                           
-
     private void logoutButtonActionPerformed(java.awt.event.ActionEvent evt) {                                             
         this.setVisible(false);
         //new mainLogin().setVisible(true);
@@ -3040,47 +2759,33 @@ public class xUIAdmin extends javax.swing.JFrame {
         assignSubjectButton.addActionListener(l);
     }
     private void assignSubjectButtonActionPerformed(java.awt.event.ActionEvent evt) {                                                    
-   
     }                                                   
     public void addStudentButtonListener(ActionListener l){
         addStudentButton.addActionListener(l);
     }
-    
     private void addStudentButtonActionPerformed(java.awt.event.ActionEvent evt) {                                                 
     }                                                
-   
     public void setSectionComboBoxT(DefaultComboBoxModel x){
         jComboBox6.setModel(x);
     }
-    
     private void jComboBox6ActionPerformed(java.awt.event.ActionEvent evt) {                                           
-
     }                                          
-    
     public void setSubjectComboBoxT(DefaultComboBoxModel x){
         subjectComboBox2.setModel(x);
     }
-    
+     @Override
     public JRootPane getRootPane(){
         return rootPane;
     }
-    
     private void subjectComboBox2ActionPerformed(java.awt.event.ActionEvent evt) {                                                 
-        
     }                                                
-    
     public void setSubjectTeacherComboBoxT(DefaultComboBoxModel x){
         subjectTeacherComboBox.setModel(x);
     }
-    
     private void subjectTeacherComboBoxActionPerformed(java.awt.event.ActionEvent evt) {                                                       
-
     }                                                      
-
     private void firstSectionNameFieldActionPerformed(java.awt.event.ActionEvent evt) {                                                      
-        // TODO add your handling code here:
     }                                                     
-
     public void addSaveChangesButtonListener(ActionListener l){
         saveChangesbutton.addActionListener(l);
     }
@@ -3102,19 +2807,14 @@ public class xUIAdmin extends javax.swing.JFrame {
     public String getNewStudentDOB(){
         return monthComboBox.getSelectedItem().toString().concat(" ").concat(dayComboBox.getSelectedItem().toString()).concat(", ").concat(yearComboBox.getSelectedItem().toString());
     }
-    
     public int getNewStudentGradeLevel(){
         return yLevelComboBox.getSelectedIndex()+1;
     }
-    
     private void saveChangesbuttonActionPerformed(java.awt.event.ActionEvent evt) {                                                  
- 
     }                                                 
-
     public void addSaveChangesButton1Listener(ActionListener l){
         saveChangesbutton1.addActionListener(l);
     }
-    
     public String getNewEmployeeID(){
         return employeeIDNumComboBox.getSelectedItem().toString();
     }
@@ -3137,56 +2837,40 @@ public class xUIAdmin extends javax.swing.JFrame {
         return gCombox.getSelectedItem().toString();
     }
     private void saveChangesbutton1ActionPerformed(java.awt.event.ActionEvent evt) {                                                   
-
     }                                                  
-    
     public void addGradeLevelComboBox2Listener(ActionListener l){
         gradeLevelComboBox2.addActionListener(l);
     }
-    
     public int getGradeLevelF(){
         return gradeLevelComboBox2.getSelectedIndex()+1;
     }
-    
     private void gradeLevelComboBox2ActionPerformed(java.awt.event.ActionEvent evt) {                                                    
     }                                                   
-
     public void addGradeLevelComboBox3Listener(ActionListener l){
         gradeLevelComboBox3.addActionListener(l);
     }
-    
     public int getGradeLevelS(){
         return gradeLevelComboBox3.getSelectedIndex()+1;
     }
-    
     private void gradeLevelComboBox3ActionPerformed(java.awt.event.ActionEvent evt) {                                                    
     }                                                   
-    
     public void addGradeLevelComboBox7Listener(ActionListener l){
         gradeLevelComboBox7.addActionListener(l);
     }
-    
     public int getGradeLevelT(){
         return gradeLevelComboBox7.getSelectedIndex()+1;
     }
-    
     private void gradeLevelComboBox7ActionPerformed(java.awt.event.ActionEvent evt) {                                                    
     }                                                   
-
     private void yLevelComboBoxActionPerformed(java.awt.event.ActionEvent evt) {                                               
-        // TODO add your handling code here:
     }                                              
     public void setYearComboBox(DefaultComboBoxModel x){
         yearComboBox.setModel(x);
     }
     private void yearComboBoxActionPerformed(java.awt.event.ActionEvent evt) {                                             
-        // TODO add your handling code here:
     }                                            
     public void setIDNumberComboBox(DefaultComboBoxModel x){
         idNumberComboBox.setModel(x);
-    }
-    public JComboBox getEditIDNumberComboBox(){
-        return idNumberComboBox;
     }
     public void setEditSurnameTextField(String x){
         surnameTextField.setText(x);
@@ -3195,7 +2879,7 @@ public class xUIAdmin extends javax.swing.JFrame {
         fNameTextField.setText(x);
     }
     public void setEditMidnameTextField(String x){
-        mNameTextField.setText(x);
+        mNameTextField.setText(x);  
     }
     public int getEditID(){
         return idNumberComboBox.getSelectedIndex();
@@ -3213,15 +2897,12 @@ public class xUIAdmin extends javax.swing.JFrame {
         idNumberComboBox.addActionListener(l);
     }
     private void idNumberComboBoxActionPerformed(java.awt.event.ActionEvent evt) {                                                 
-        // TODO add your handling code here:
     }                                                
     public int getEditGender(){
         return gComboBox.getSelectedIndex();
     }
     private void gComboBoxActionPerformed(java.awt.event.ActionEvent evt) {                                          
-        // TODO add your handling code here:
     }                                         
-    
     public void setEditMonth(int x){
         monthComboBox.setSelectedIndex(x);
     }
@@ -3249,19 +2930,15 @@ public class xUIAdmin extends javax.swing.JFrame {
     public int setEditGender(int x){
         return gComboBox.getSelectedIndex();
     }
-    
     private void monthComboBoxActionPerformed(java.awt.event.ActionEvent evt) {                                              
-        // TODO add your handling code here:
     }                                             
-    
     public void addEmployeeIDNumComboBoxListener(ActionListener l){
         employeeIDNumComboBox.addActionListener(l);
     }
-    public JComboBox getEmployeeIDComboBox(){
-        return employeeIDNumComboBox;
+    public void setEmployeeIDComboBox(DefaultComboBoxModel m){
+        employeeIDNumComboBox.setModel(m);
     }
     private void employeeIDNumComboBoxActionPerformed(java.awt.event.ActionEvent evt) {                                                      
-        // TODO add your handling code here:
     }                                                     
     public void addAddFacultyButtonListener(ActionListener l){
         addFacultyButton.addActionListener(l);
@@ -3278,81 +2955,109 @@ public class xUIAdmin extends javax.swing.JFrame {
     }
     private void editFacultyButtonActionPerformed(java.awt.event.ActionEvent evt) {                                                  
     }                                                 
+    public void revert(){
+        personalDataMenu.setVisible(false);
+        accountSettingsMenu.setVisible(false);
+        classDataMenu.setVisible(false);
+        schoolyearSettingsMenu.setVisible(false);
+        addStudentPanel.setVisible(false);
+        addFacultyPanel.setVisible(false);
+        assignStudentPanel.setVisible(false);
+        quarterSettingsPanel.setVisible(false);
+        editAssignSubjectPanel.setVisible(false);
+        editSectionPanel.setVisible(false);
+        assignSubjectPanel.setVisible(false);
+        accountSettingsPanel.setVisible(false);
+        currentSettingsPanel.setVisible(false);
+        addSectionPanel.setVisible(false);
+        editFacultyPanel.setVisible(false);
+        editStudentPanel.setVisible(false);
+        assignFacultyPanel.setVisible(false);
+        IDNumField.setText("");
+        surnameField.setText("");
+        firstnameField.setText("");
+        middlenameField.setText("");
+        IDNumField1.setText("");
+        surnameField1.setText("");
+        firstnameField1.setText("");
+        middlenameField1.setText("");
+        contactNumberField.setText("");
+        surnameTextField.setText("");
+        fNameTextField.setText("");
+        mNameTextField.setText("");
+        snTextField.setText("");
+        fnTextField.setText("");
+        mnTextField.setText("");
+        firstSectionNameField.setText("");
+        knowledgePercentageField.setText("");
+        understandingPercentageField.setText("");
+        processPercentageLabel.setText("");
+        productPercentageField.setText("");
+    }
     public void addCDButtonListener(ActionListener l){
         classDataButton.addActionListener(l);
     }
-    public JPanel getPDMenu(){
-        return personalDataMenu;
+    public void setPDMenu(){
+            personalDataMenu.setVisible(true);
     }
-    public JPanel getASMenu(){
-        return accountSettingsMenu;
+    public void setASMenu(){
+            accountSettingsMenu.setVisible(true);
     }
-    public JPanel getGDMenu(){
-        return gradesDataMenu;
+    public void setCDMenu(){
+            classDataMenu.setVisible(true);
     }
-    public JPanel getCDMenu(){
-        return classDataMenu;
+    public void setSYSMenu(){
+            schoolyearSettingsMenu.setVisible(true);
     }
-    public JPanel getSYSMenu(){
-        return schoolyearSettingsMenu;
+    public void setAddStPanel(){
+            addStudentPanel.setVisible(true);
     }
-    public JPanel getAddStPanel(){
-        return addStudentPanel;
+    public void setAddEmPanel(){
+            addFacultyPanel.setVisible(true);
     }
-    public JPanel getAddEmPanel(){
-        return addFacultyPanel;
+    public void setAssignStPanel(){
+            assignStudentPanel.setVisible(true);
     }
-    public JPanel getAssignStPanel(){
-        return assignStudentPanel;
+    public void setAssignFPanel(){
+            assignFacultyPanel.setVisible(true);
     }
-    public JPanel getAssignFPanel(){
-        return assignFacultyPanel;
+    public void setEditStPanel(){
+            editStudentPanel.setVisible(true);
     }
-    public JPanel getEditStPanel(){
-        return editStudentPanel;
+    public void setEditFPanel(){
+            editFacultyPanel.setVisible(true);
     }
-    public JPanel getEditFPanel(){
-        return editFacultyPanel;
+    public void setAddSecPanel(){
+            addSectionPanel.setVisible(true);
     }
-    public JPanel getAddSecPanel(){
-        return addSectionPanel;
+    public void setCSPanel(){
+            currentSettingsPanel.setVisible(true);
     }
-    public JPanel getCSPanel(){
-        return currentSettingsPanel;
+    public void setASPanel(){
+            accountSettingsPanel.setVisible(true);
     }
-    public JPanel getASPanel(){
-        return addSectionPanel;
+    public void setAssignSTPanel(){
+            assignSubjectPanel.setVisible(true);
     }
-    public JPanel getAssignSTPanel(){
-        return assignSubjectPanel;
+    public void setEditSectPanel(){
+            editSectionPanel.setVisible(true);
     }
-    public JPanel getEditSectPanel(){
-        return editSectionPanel;
+    public void setEditSubjTeachPanel(){
+            editAssignSubjectPanel.setVisible(true);
     }
-    public JPanel getEditSubjTeachPanel(){
-        return assignSubjectPanel;
+    public void setQSPanel(){
+            quarterSettingsPanel.setVisible(true);
     }
-    public JPanel getQSPanel(){
-        return quarterSettingsPanel;
-    }
-
-        
-        
     private void classDataButtonActionPerformed(java.awt.event.ActionEvent evt) {                                                
-  
     }                                               
-    
     public void addASButtonListener(ActionListener l){
         accountSettingsButton.addActionListener(l);
     }
-    
     private void accountSettingsButtonActionPerformed(java.awt.event.ActionEvent evt) {                                                      
-
     }                                                     
     public void addAddSectionButtonListener(ActionListener l){
         addSectionButton.addActionListener(l);
     }
-    
     private void addSectionButtonActionPerformed(java.awt.event.ActionEvent evt) {                                                 
     }                                                
     public void addAssignFacultyButtonListener(ActionListener l){
@@ -3360,24 +3065,52 @@ public class xUIAdmin extends javax.swing.JFrame {
     }
     private void assignFacultyButtonActionPerformed(java.awt.event.ActionEvent evt) {                                                    
     }                                                   
-    public void addEditSectionButtonListener(ActionListener l){
-        editSectionButton.addActionListener(l);
-    }
-    private void editSectionButtonActionPerformed(java.awt.event.ActionEvent evt) {                                                  
-    }                                                 
     public void addQuarterSettingsButtonListener(ActionListener l){
         quarterSettingsButton.addActionListener(l);
     }
     private void quarterSettingsButtonActionPerformed(java.awt.event.ActionEvent evt) {                                                      
-
     }                                                     
-
-    private void SettingsActionPerformed(java.awt.event.ActionEvent evt) {                                         
-    }                                        
-
     private void fNameTextFieldActionPerformed(java.awt.event.ActionEvent evt) {                                               
-        // TODO add your handling code here:
     }                                              
+    private void surnameTextFieldActionPerformed(java.awt.event.ActionEvent evt) {                                                 
+    }                                                
+    private void snTextFieldActionPerformed(java.awt.event.ActionEvent evt) {                                            
+    }                                           
+    public void addGradeLevelComboBoxListener(ActionListener l){
+        gradeLevelComboBox8.addActionListener(l);
+    }
+    public String getGLvl(){
+        return gradeLevelComboBox8.getSelectedItem().toString();
+    }
+    public int getGradeLv(){
+        return gradeLevelComboBox8.getSelectedIndex()+1;
+    }
+    private void gradeLevelComboBox8ActionPerformed(java.awt.event.ActionEvent evt) {                                                    
+    }                                                   
+    public String getSectionCombox(){
+        return jComboBox7.getSelectedItem().toString();
+    }
+    public void setSectionCombox(DefaultComboBoxModel m){
+        jComboBox7.setModel(m);
+    }
+    private void jComboBox7ActionPerformed(java.awt.event.ActionEvent evt) {                                           
+    }                                          
+    public String getSubjectCombox(){
+        return subjectComboBox3.getSelectedItem().toString();
+    }
+    public void setSubjectCombox(DefaultComboBoxModel m){
+        subjectComboBox3.setModel(m);
+    }
+    private void subjectComboBox3ActionPerformed(java.awt.event.ActionEvent evt) {                                                 
+    }                                                
+    public String getNewSubjTeacher(){
+        return subjectTeacherComboBox1.getSelectedItem().toString();
+    }
+    public void setSubjectTeacherComboBox1(DefaultComboBoxModel m){
+        subjectTeacherComboBox1.setModel(m);
+    }
+    private void subjectTeacherComboBox1ActionPerformed(java.awt.event.ActionEvent evt) {                                                        
+    }                                                       
 
     /**
      * @param args the command line arguments
@@ -3395,19 +3128,14 @@ public class xUIAdmin extends javax.swing.JFrame {
                     break;
                 }
             }
-        } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(xUIAdmin.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(xUIAdmin.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(xUIAdmin.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (javax.swing.UnsupportedLookAndFeelException ex) {
+        } catch ( ClassNotFoundException | InstantiationException | IllegalAccessException | javax.swing.UnsupportedLookAndFeelException ex) {
             java.util.logging.Logger.getLogger(xUIAdmin.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
         //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
+            @Override
             public void run() {
                 new xUIAdmin().setVisible(true);
             }
@@ -3446,7 +3174,6 @@ public class xUIAdmin extends javax.swing.JFrame {
     private javax.swing.JLabel Query6;
     private javax.swing.JLabel QueryofAddingStudent;
     private javax.swing.JLabel SectionLabel;
-    private javax.swing.JButton Settings;
     private javax.swing.JLabel StudentLabel;
     private javax.swing.JLabel StudentLabel1;
     private javax.swing.JLabel StudentLabel2;
@@ -3535,7 +3262,6 @@ public class xUIAdmin extends javax.swing.JFrame {
     private javax.swing.JButton editFacultyButton;
     private javax.swing.JDialog editFacultyDialogBox;
     private javax.swing.JPanel editFacultyPanel;
-    private javax.swing.JButton editSectionButton;
     private javax.swing.JDialog editSectionDialogBox;
     private javax.swing.JPanel editSectionPanel;
     private javax.swing.JButton editStudentButton;
@@ -3587,31 +3313,11 @@ public class xUIAdmin extends javax.swing.JFrame {
     private javax.swing.JComboBox idNumberComboBox;
     private javax.swing.JLabel invalidInputMessage26;
     private javax.swing.JLabel invalidInputMessage27;
-    private javax.swing.JLabel invalidInputMessage28;
-    private javax.swing.JLabel invalidInputMessage30;
-    private javax.swing.JLabel invalidInputMessage31;
-    private javax.swing.JLabel invalidInputMessage32;
-    private javax.swing.JLabel invalidInputMessage33;
-    private javax.swing.JLabel invalidInputMessage34;
-    private javax.swing.JLabel invalidInputMessage35;
-    private javax.swing.JLabel invalidInputMessage36;
     private javax.swing.JLabel invalidInputMessage37;
-    private javax.swing.JLabel invalidInputMessage38;
-    private javax.swing.JLabel invalidInputMessage39;
-    private javax.swing.JLabel invalidInputMessage40;
-    private javax.swing.JLabel invalidInputMessage41;
     private javax.swing.JLabel invalidInputMessage43;
     private javax.swing.JLabel invalidInputMessage44;
-    private javax.swing.JLabel invalidInputMessage45;
     private javax.swing.JLabel invalidInputMessage46;
     private javax.swing.JLabel invalidInputMessage47;
-    private javax.swing.JLabel invalidInputMessage48;
-    private javax.swing.JLabel invalidInputMessage49;
-    private javax.swing.JLabel invalidInputMessage50;
-    private javax.swing.JLabel invalidInputMessage51;
-    private javax.swing.JLabel invalidInputMessage52;
-    private javax.swing.JLabel invalidInputMessage53;
-    private javax.swing.JLabel invalidInputMessage54;
     private javax.swing.JComboBox jComboBox1;
     private javax.swing.JComboBox jComboBox10;
     private javax.swing.JComboBox jComboBox13;
@@ -3627,7 +3333,6 @@ public class xUIAdmin extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel12;
     private javax.swing.JLabel jLabel13;
     private javax.swing.JLabel jLabel14;
-    private javax.swing.JLabel jLabel15;
     private javax.swing.JLabel jLabel16;
     private javax.swing.JLabel jLabel17;
     private javax.swing.JLabel jLabel18;
@@ -3709,8 +3414,6 @@ public class xUIAdmin extends javax.swing.JFrame {
     private javax.swing.JButton saveButton2;
     private javax.swing.JButton saveChangesbutton;
     private javax.swing.JButton saveChangesbutton1;
-    private javax.swing.JLabel schoolYear;
-    private javax.swing.JTextField schoolYearLabel;
     private javax.swing.JButton schoolYearSettings;
     private javax.swing.JPanel schoolyearSettingsMenu;
     private javax.swing.JLabel secondQuarterSettings;
@@ -3762,7 +3465,6 @@ public class xUIAdmin extends javax.swing.JFrame {
     private javax.swing.JLabel thirdQuarterSettings;
     private javax.swing.JComboBox toFirstQuarterComboBox;
     private javax.swing.JComboBox toFourthQuarterComboBox;
-    private javax.swing.JLabel toLabel;
     private javax.swing.JLabel toLabel1;
     private javax.swing.JLabel toLabel2;
     private javax.swing.JLabel toLabel3;
@@ -3784,6 +3486,4 @@ public class xUIAdmin extends javax.swing.JFrame {
     private javax.swing.JLabel yLevelLabel;
     private javax.swing.JComboBox yearComboBox;
     // End of variables declaration                   
-
-
 }
